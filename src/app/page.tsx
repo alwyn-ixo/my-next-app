@@ -1,5 +1,4 @@
-import { ClientSection } from '@/components/ClientSection';
-import { ServerSection } from '@/components/ServerSection';
+import { ClientSection, ServerSection } from '@/components';
 
 export default async function Home() {
   return (

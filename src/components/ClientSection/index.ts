@@ -1,2 +1,3 @@
 //index.ts
-export * from './ClientSection';
+export { ClientSection } from "./ClientSection";
+export * from "./components";

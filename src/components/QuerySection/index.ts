@@ -1,4 +1,3 @@
-export * from "./hooks";
-export * from "./QueryButton";
-export * from "./ResultDisplay";
 export { QuerySection } from "./QuerySection";
+export * from "./hooks";
+export * from "./components";

@@ -1,6 +1,7 @@
 'use client';
 
-import { QueryButton, ResultDisplay, useQueryData } from '@/components';
+import { AutoRefreshBlockHeight } from './components';
+import { QueryButton, ResultDisplay, useQueryData } from '../QuerySection';
 
 export const ClientSection = () => {
   const chainStatus = useQueryData('status');
@@ -13,6 +14,8 @@ export const ClientSection = () => {
       <main className="flex flex-col items-center gap-8">
         <section className="text-center w-full max-w-4xl">
           <h2 className="text-xl font-bold mb-4">Client-Side Chain Queries</h2>
+                  <AutoRefreshBlockHeight />
+
           <div className="flex flex-wrap gap-4 justify-center mb-8">
             <QueryButton onClick={chainStatus.fetchData} label="Query Chain Status" />
             <QueryButton onClick={blockHeight.fetchData} label="Query Latest Block" />

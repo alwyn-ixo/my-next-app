@@ -1,3 +1,13 @@
+# Hey there! 👋
+
+This is a simple Next.js project that demonstrates how to fetch and display data from an IXO blockchain RPC endpoint.
+I created it to learn Next.js, take Cursor for a spin, and to have a playground for our Tech Tuesday video recording series.
+See how it evolves over time as I learn more about Next.js!
+
+### Hope you find it useful! 😊
+
+## Project Setup
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

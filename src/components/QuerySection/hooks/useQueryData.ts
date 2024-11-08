@@ -1,5 +1,7 @@
-import { useState } from "react";
+"use client";
+
 import axios from "axios";
+import { useState } from "react";
 
 export const useQueryData = (endpoint: string) => {
   const [data, setData] = useState<any>(null);
