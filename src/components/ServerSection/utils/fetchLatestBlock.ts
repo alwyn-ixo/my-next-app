@@ -1,7 +1,7 @@
 export async function fetchLatestBlock() {
   try {
-    const response = await fetch("https://ixo-rpc.ibs.team/block", {
-      next: { revalidate: 5 }, // Revalidate more frequently for block height
+    const response = await fetch(`${process.env.NEXT_PUBLIC_IXO_RPC_URL}/block`, {
+      next: { revalidate: 60 },
     });
 
     if (!response.ok) {

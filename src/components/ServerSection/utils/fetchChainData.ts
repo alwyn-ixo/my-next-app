@@ -1,7 +1,7 @@
 export async function fetchChainStatus() {
   try {
-    const response = await fetch("https://ixo-rpc.ibs.team/status", {
-      next: { revalidate: 60 }, // Revalidate every 60 seconds
+    const response = await fetch(`${process.env.NEXT_PUBLIC_IXO_RPC_URL}/status`, {
+      next: { revalidate: 60 },
     });
 
     if (!response.ok) {

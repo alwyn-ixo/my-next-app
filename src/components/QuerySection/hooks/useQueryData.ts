@@ -9,7 +9,7 @@ export const useQueryData = (endpoint: string) => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`https://ixo-rpc.ibs.team/${endpoint}`);
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_IXO_RPC_URL}/${endpoint}`);
       setData(response.data);
       setShow(!show);
     } catch (error) {

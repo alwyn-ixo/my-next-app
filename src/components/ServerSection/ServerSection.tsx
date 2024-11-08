@@ -7,6 +7,8 @@ export async function ServerSection() {
     fetchChainStatus(),
     fetchLatestBlock(),
   ]);
+
+  console.log("chainStatus", chainStatus);
   
   return (
     <section className="text-center w-full max-w-4xl">
@@ -14,7 +16,7 @@ export async function ServerSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
         <ServerDataCard 
           title="Chain ID" 
-          data={chainStatus.chain_id} 
+          data={chainStatus.node_info.network} 
         />
         <ServerDataCard 
           title="Initial Block Height" 

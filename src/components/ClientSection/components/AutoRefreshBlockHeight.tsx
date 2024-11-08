@@ -11,7 +11,7 @@ export function AutoRefreshBlockHeight() {
     fetchBlock();
 
     // Set up interval
-    const interval = setInterval(fetchBlock, 6000);
+    const interval = setInterval(fetchBlock, 60000);
 
     // Cleanup interval on unmount
     return () => clearInterval(interval);
